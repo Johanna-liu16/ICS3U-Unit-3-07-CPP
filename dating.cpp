@@ -13,14 +13,15 @@ int main() {
     int userAge;
 
     // input
-    std::cout << "This program checks if you're suitable for dating." << std::endl;
+    std::cout << "This program checks if "
+    "you're suitable for dating." << std::endl;
     std::cout << "Enter your age: ";
     std::cin >> stringUserAge;
 
     // process and output
     try {
         userAge = std::stoi(stringUserAge);
-        if (userAge >= 25 and userAge <= 40) {
+        if (userAge >= 25 && userAge <= 40) {
             std::cout << "Congratulations! You're an acceptable age.";
         } else if (userAge < 0) {
             std::cout << "Invalid Integer";
